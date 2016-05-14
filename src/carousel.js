@@ -253,6 +253,7 @@
       /*
         We need to let the browser first position the next slide on the correct side,
         so we scheduled the transition start in the browser's next frame.
+        !Not sure why but it takes two animation frames to put the next slide in position.
       */
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
