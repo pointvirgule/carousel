@@ -1,0 +1,86 @@
+* {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+#carousel {
+  display: inline-block;
+  position: relative;
+  max-width: 80%;
+  height: 400px;
+  max-height: 100%;
+}
+
+.slide {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/placeholder.jpg);
+}
+
+.controls {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.control {
+  cursor:pointer;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+}
+
+.control > .arrow-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  width: 3em;
+  height: 3em;
+  overflow: hidden;
+}
+
+.control > .arrow-wrapper > .arrow {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.control.prev > .arrow-wrapper > .arrow {
+  transform: translate3d(70%, 0, 0) rotate3d(0, 0, 1, 45deg);
+  -webkit-transform: translate3d(70%, 0, 0) rotate3d(0, 0, 1, 45deg);
+  -moz-transform: translate3d(70%, 0, 0) rotate3d(0, 0, 1, 45deg);
+}
+
+.control.next > .arrow-wrapper > .arrow {
+  transform: translate3d(-70%, 0, 0) rotate3d(0, 0, 1, 45deg);
+  -webkit-transform: translate3d(-70%, 0, 0) rotate3d(0, 0, 1, 45deg);
+  -moz-transform: translate3d(-70%, 0, 0) rotate3d(0, 0, 1, 45deg);
+}
+
+.control.prev {
+  left: 0;
+}
+
+.control.next {
+  right: 0;
+}

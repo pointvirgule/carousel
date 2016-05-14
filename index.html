@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Front end test</title>
+		<link rel="stylesheet" href="styles/carousel.css">
+		<link rel="stylesheet" href="styles/app.css">
+		<script src="src/polyfill.js"></script>
+		<script src="src/carousel.js"></script>
+	</head>
+	<body>
+		<div id="carousel">
+			<div class="indicators">
+				<div class="indicator" data-slide='0'></div>
+				<div class="indicator" data-slide='1'></div>
+				<div class="indicator" data-slide='2'></div>
+			</div>
+			<div class="slides">
+				<div class="slide">
+					<div class="caption">First Slide</div>
+				</div>
+				<div class="slide">
+					<div class="caption">Second Slide</div>
+				</div>
+				<div class="slide">
+					<div class="caption">Third Slide</div>
+				</div>
+			</div>
+			<div class="controls">
+				<div class="control prev" data-navigate='prev'>
+					<div class='arrow-wrapper'><div class='arrow'></div></div>
+				</div>
+				<div class="control next" data-navigate='next'>
+					<div class='arrow-wrapper'><div class='arrow'></div></div>
+				</div>
+			</div>
+		</div>
+		<script src="src/index.js"></script>
+	</body>
+</html>
